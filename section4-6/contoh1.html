@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh 1 Section 4 - 6</title>
+  </head>
+  <body>
+    <h1 id="my-heading">Hello World!</h1>
+    <button onclick="changeHeading()">Change Heading</button>
+
+    <script>
+      function changeHeading() {
+        // Ambil elemen h1 dengan ID "my-heading"
+        var heading = document.getElementById("my-heading");
+
+        // Ubah nilai atribut "class" dari elemen tersebut menjadi "red-text"
+        heading.setAttribute("class", "red-text");
+      }
+    </script>
+
+    <style>
+      .red-text {
+        color: red;
+      }
+    </style>
+  </body>
+</html>

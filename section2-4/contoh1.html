@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh 1 Section 2 - 4</title>
+  </head>
+  <body>
+    <h1 id="judul">Ini adalah judul</h1>
+    <p id="paragraf">Ini adalah paragraf</p>
+
+    <button onclick="ubahIsi()">Ubah Isi</button>
+
+    <script>
+      function ubahIsi() {
+        var judul = document.getElementById("judul");
+        judul.innerHTML = "Judul sudah diubah";
+
+        var paragraf = document.getElementById("paragraf");
+        paragraf.innerHTML = "Paragraf sudah diubah";
+      }
+    </script>
+  </body>
+</html>

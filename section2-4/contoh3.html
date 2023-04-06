@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh 3 Section 2 - 4</title>
+  </head>
+  <body>
+    <h1 id="my-heading">Hello World!</h1>
+    <button onclick="addParagraph()">Add Paragraph</button>
+
+    <script>
+      function addParagraph() {
+        // Buat elemen paragraf baru
+        var newParagraph = document.createElement("p");
+
+        // Tambahkan teks ke dalam elemen paragraf baru
+        var paragraphText = document.createTextNode(
+          "Ini adalah paragraf baru!"
+        );
+        newParagraph.appendChild(paragraphText);
+
+        // Ambil elemen div yang sudah ada di dokumen HTML
+        var container = document.getElementById("container");
+
+        // Tambahkan elemen paragraf baru ke dalam div dengan menggunakan appendChild()
+        container.appendChild(newParagraph);
+      }
+    </script>
+
+    <div id="container">
+      <!-- Di sini akan ditambahkan elemen paragraf baru -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh 2 Section 2 - 4</title>
+    <script>
+      function changeColor() {
+        // Ambil elemen
+        var p = document.getElementById("paragraph");
+
+        // Ambil parent element
+        var parent = p.parentNode;
+
+        // Ubah warna background dari parent element menjadi merah
+        parent.style.backgroundColor = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p id="paragraph">Ini adalah sebuah paragraf.</p>
+      <button onclick="changeColor()">
+        Ubah Warna Background Parent Element
+      </button>
+    </div>
+  </body>
+</html>
